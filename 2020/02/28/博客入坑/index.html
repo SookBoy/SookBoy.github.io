@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      例子 | SookBoy
+      博客入坑 | SookBoy
     
   </title>
   <meta name="author" content="SookBoy">
@@ -101,7 +101,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「例子」
+			「博客入坑」
 		
 	</p>
 
@@ -228,14 +228,27 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
 	 
 
 <div class="layout-post">
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2020/02/28/%E4%BE%8B%E5%AD%90/" itemprop="url">
-		例子
+	<a href="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/" itemprop="url">
+		博客入坑
 	</a>
 
 		</div>
@@ -251,8 +264,8 @@
 
 	更新于
 
-	<a href="/2020/02/28/%E4%BE%8B%E5%AD%90/" itemprop="url">
-		<time datetime="2020-02-27T23:01:00.000Z" itemprop="dateUpdated">
+	<a href="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/" itemprop="url">
+		<time datetime="2020-02-28T00:35:01.000Z" itemprop="dateUpdated">
 	  		2020-02-28
 	  </time>
 	</a> 
@@ -261,7 +274,14 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/%E9%9A%8F%E7%AC%94/" class=" ">
+			随笔
+		</a>
+	
+		
 			</span>
 			
 			
@@ -271,10 +291,64 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-				
+			<p>简单记录一下自己在搭建博客时遇到的一些问题。博客主题详解关注： <a href="https://sariay.github.io/2018/08/27/Annie主题使用说明/" target="_blank" rel="noopener">Annie主题使用说明     </a>   </p>
+<h4 id="文章-封面图如何设置"><a href="#文章-封面图如何设置" class="headerlink" title="文章 封面图如何设置"></a>文章 封面图如何设置</h4><p>1.新建一篇文章</p>
+<p>2.打开文章后，修改以下内容。如图：</p>
+<p> <strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%E5%9B%BE%E7%89%87.jpg" class title="This is an test image"></strong> </p>
+<h4 id="如何优化博客打开慢"><a href="#如何优化博客打开慢" class="headerlink" title="如何优化博客打开慢"></a>如何优化博客打开慢</h4><p>1.尽可能将页面图片和文章封面图片设置为固定图片。如下图：</p>
+<p> <strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/%E5%B0%81%E9%9D%A2%E5%9B%BE%E7%89%872.jpg" class title="This is an test image"></strong> </p>
+<p> <strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/QQ%E6%88%AA%E5%9B%BE20200228073657.jpg" class title="This is an test image"></strong> </p>
+<p>2.将博客代码备份到国内托管平台或架设国内云服务器。</p>
+<p>*更换托管平台。如图：</p>
+<p> <strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/QQ%E6%88%AA%E5%9B%BE20200228075318.jpg" class title="This is an test image"></strong> </p>
+<p>*架设国内云服务器</p>
+<p>架设方法<a href="https://www.jianshu.com/p/547c2c3ff79e" target="_blank" rel="noopener">优化github博客打开慢</a></p>
+<h4 id="图片无法显示"><a href="#图片无法显示" class="headerlink" title="图片无法显示"></a>图片无法显示</h4><h5 id="可能出现问题的几个地方"><a href="#可能出现问题的几个地方" class="headerlink" title="可能出现问题的几个地方"></a>可能出现问题的几个地方</h5><ol>
+<li><p>没有设置站点配置文件_config.yml中 post_asset_folder:true。</p>
+<p>出现该问题的表现形式： 图片在预览时不显示。如图：</p>
+<p><strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87.jpg" class title="This is an test image"></strong> </p>
+<p>原因：图片没有放在和文章同一目录下的同名的文件夹中。如图：</p>
+<p> <strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%876.jpg" class title="This is an test image"></strong> </p>
+<p>解决方法：</p>
+<ul>
+<li><p>安装插件：在hexo的目录下执行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>完成安装后用hexo新建文章的时候会发现_posts目录下面会多出一个和文章名字一样的文件夹。图片就可以放在文件夹下面。</p>
+</li>
+</ul>
+</li>
+<li><p>文章中 插入图片的书写格式错误</p>
+<p>出现该问题的表现形式：图片显示一个小方框。如图：</p>
+<p> <strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%871.jpg" class title="This is an test image"></strong> </p>
+<p>解决方法：</p>
+<ul>
+<li><p>在Morkdonw中插入图片的写法不要按照下面去写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片描述](图片路径)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>要写成如下方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**&#123;% asset_img test.jpg This is an test image %&#125;**</span><br></pre></td></tr></table></figure>
+
+<p>test.jpg 为你要插入的图片名称</p>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![description][1]</span><br><span class="line"> [1]:picture_path &quot;picture_name&quot;</span><br></pre></td></tr></table></figure>
+
+<p>picture_name 为你插入的图片名称</p>
+</li>
+</ul>
+<p><strong>注意：该书写格式的前提是图片要放在和文章同一级下的同名文件夹中</strong></p>
+</li>
+<li><p>在github中关于Hexo的仓库名不相同</p>
+<p>原因：github中的仓库名与自己的用户名不相同</p>
+<p>解决方法：1.将你自己的仓库名修改成和自己用户名相同的名字。2.将更新好的URL复制下来，打开站点配置文件修改如下图所示：</p>
+<p><strong><img src="/2020/02/28/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%877.jpg" class title="This is an test image"></strong> </p>
+<p>​    </p>
+</li>
+</ol>
+	
 		</div>
 		
-		<div id="current-post-cover" data-scr="/img/Random-img/1.jpg"></div>
+		<div id="current-post-cover" data-scr="/img/Random-img/94.jpg"></div>
 
 		<!-- relate post, comment...-->
 		<div class="investment-container">
@@ -290,7 +364,7 @@
 		<a id="totop-post-page">返回顶部</a>
 		
 		
-			<a href="/2020/02/26/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/" title="博客入坑" rel="next">
+			<a href="/2020/02/25/hello-world/" title="Hello World" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -308,32 +382,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/02/26/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/" title="博客入坑">
-								博客入坑			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								二月 26日, 2020				
-							</p>
-							<p class="relate-post-content">
-								简单记录一下自己在搭建博客时遇到的一些问题。博客主题详解关注： Annie主题使用说明        
-文章 封面图如何设置1.新建一篇文章
-2.打开文章后，修改以下内容。如图：
-
-如何优化博客打开慢1.尽可能将页面图片和文章封面图片...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/02/26/%E5%8D%9A%E5%AE%A2%E5%85%A5%E5%9D%91/" title="博客入坑">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/Random-img/94.jpg" alt="博客入坑"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
